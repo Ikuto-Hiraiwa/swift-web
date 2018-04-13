@@ -1,0 +1,34 @@
+PODS:
+  - Kanna (4.0.0)
+  - MMDrawerController (0.5.7):
+    - MMDrawerController/Core (= 0.5.7)
+    - MMDrawerController/MMDrawerBarButtonItem (= 0.5.7)
+    - MMDrawerController/MMDrawerVisualStates (= 0.5.7)
+    - MMDrawerController/Subclass (= 0.5.7)
+  - MMDrawerController/Core (0.5.7)
+  - MMDrawerController/MMDrawerBarButtonItem (0.5.7):
+    - MMDrawerController/Core
+  - MMDrawerController/MMDrawerVisualStates (0.5.7):
+    - MMDrawerController/Core
+  - MMDrawerController/Subclass (0.5.7):
+    - MMDrawerController/Core
+  - PagingMenuController (2.2.0)
+  - SDWebImage (4.0.0):
+    - SDWebImage/Core (= 4.0.0)
+  - SDWebImage/Core (4.0.0)
+
+DEPENDENCIES:
+  - Kanna (~> 4.0.0)
+  - MMDrawerController (~> 0.5.7)
+  - PagingMenuController
+  - SDWebImage (~> 4.0)
+
+SPEC CHECKSUMS:
+  Kanna: d5ae2a26472f7e7a474e7f36a9cd8aa2c8c63ad3
+  MMDrawerController: 7a4cf8e25596bf2434e03ce50d22a8608ddee6a1
+  PagingMenuController: 6176618987bb170096664f2da097313e45ed9c31
+  SDWebImage: 76a6348bdc74eb5a55dd08a091ef298e56b55e41
+
+PODFILE CHECKSUM: 39e19022ec0af3f2c1444a4978d2abc76f74020b
+
+COCOAPODS: 1.3.1

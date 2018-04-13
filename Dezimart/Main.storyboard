@@ -1,0 +1,165 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13196" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13173"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Root View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController storyboardIdentifier="RootView" useStoryboardIdentifierAsRestorationIdentifier="YES" id="BYZ-38-t0r" customClass="RootViewController" customModule="Dezimart" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" red="1" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="764" y="150"/>
+        </scene>
+        <!--Main View Controller-->
+        <scene sceneID="oA3-R9-HVI">
+            <objects>
+                <viewController storyboardIdentifier="MainView" useStoryboardIdentifierAsRestorationIdentifier="YES" id="nzp-xP-7bm" customClass="MainViewController" customModule="Dezimart" customModuleProvider="target" sceneMemberID="viewController">
+                    <scrollView key="view" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" ambiguous="YES" id="lWQ-Rc-zAk">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="pmI-dh-Axm">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="145"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="1" green="1" blue="0.0" alpha="0.61839148116438358" colorSpace="calibratedRGB"/>
+                            </scrollView>
+                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="e0P-3q-A8d">
+                                <rect key="frame" x="0.0" y="153" width="375" height="151"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <subviews>
+                                    <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="8DN-Ac-Rae">
+                                        <rect key="frame" x="0.0" y="0.0" width="375" height="127"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <color key="backgroundColor" red="1" green="0.0" blue="0.0" alpha="0.2459332191780822" colorSpace="calibratedRGB"/>
+                                    </scrollView>
+                                    <pageControl opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" numberOfPages="3" translatesAutoresizingMaskIntoConstraints="NO" id="XSx-Pn-Osa">
+                                        <rect key="frame" x="168" y="114" width="39" height="37"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                    </pageControl>
+                                </subviews>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" red="0.50196081400000003" green="0.50196081400000003" blue="0.50196081400000003" alpha="0.2732769691780822" colorSpace="calibratedRGB"/>
+                        <viewLayoutGuide key="safeArea" id="za4-eV-uXp"/>
+                    </scrollView>
+                    <connections>
+                        <outlet property="Img_Scroll" destination="pmI-dh-Axm" id="OVm-EA-Hph"/>
+                        <outlet property="Main_Scroll_View" destination="lWQ-Rc-zAk" id="q7k-Sb-bkk"/>
+                        <outlet property="New_ItemPage" destination="XSx-Pn-Osa" id="olk-SR-JuP"/>
+                        <outlet property="New_Item_Scroll" destination="8DN-Ac-Rae" id="sCO-vn-Zqg"/>
+                        <outlet property="View_Scroll" destination="e0P-3q-A8d" id="4gt-bX-kfa"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="naa-u6-cYH" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1485.5999999999999" y="149.77511244377811"/>
+        </scene>
+        <!--Guitar View Controller-->
+        <scene sceneID="rMn-XB-Ja0">
+            <objects>
+                <viewController storyboardIdentifier="GuitarView" useStoryboardIdentifierAsRestorationIdentifier="YES" id="kCx-V9-y2Y" customClass="GuitarViewController" customModule="Dezimart" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="tgR-rB-Jzl">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="B9d-s2-yaV">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <color key="sectionIndexBackgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                            </tableView>
+                        </subviews>
+                        <color key="backgroundColor" red="0.20000000300000001" green="0.20000000300000001" blue="0.20000000300000001" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstItem="B9d-s2-yaV" firstAttribute="bottom" secondItem="Wvi-VM-PKL" secondAttribute="bottom" id="FeC-Us-FpE"/>
+                            <constraint firstItem="B9d-s2-yaV" firstAttribute="leading" secondItem="Wvi-VM-PKL" secondAttribute="leading" id="LZt-B7-9tN"/>
+                            <constraint firstItem="B9d-s2-yaV" firstAttribute="top" secondItem="tgR-rB-Jzl" secondAttribute="top" id="W07-xn-PJ9"/>
+                            <constraint firstItem="B9d-s2-yaV" firstAttribute="trailing" secondItem="Wvi-VM-PKL" secondAttribute="trailing" id="jda-Cn-6gU"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="Wvi-VM-PKL"/>
+                    </view>
+                    <connections>
+                        <outlet property="Table_View_Guitar" destination="B9d-s2-yaV" id="QVf-1J-UtT"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="OxS-hE-BYH" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1050" y="866"/>
+        </scene>
+        <!--Bass View Controller-->
+        <scene sceneID="HQS-B2-Po0">
+            <objects>
+                <viewController storyboardIdentifier="BassView" useStoryboardIdentifierAsRestorationIdentifier="YES" id="vZb-Ca-pFn" customClass="BassViewController" customModule="Dezimart" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="JO0-v7-ybR">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" red="1" green="1" blue="0.40000000600000002" alpha="1" colorSpace="calibratedRGB"/>
+                        <viewLayoutGuide key="safeArea" id="47W-cb-T3q"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="cq5-Sc-Yxg" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1708" y="866"/>
+        </scene>
+        <!--Drum View Controller-->
+        <scene sceneID="K7y-Ib-oiu">
+            <objects>
+                <viewController storyboardIdentifier="DrumView" useStoryboardIdentifierAsRestorationIdentifier="YES" id="TF8-Ua-jTq" customClass="DrumViewController" customModule="Dezimart" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="iwU-rO-Cn9">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" red="0.25098040700000002" green="0.0" blue="0.50196081400000003" alpha="1" colorSpace="calibratedRGB"/>
+                        <viewLayoutGuide key="safeArea" id="oep-1I-Upo"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="92a-56-ftQ" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2365" y="861"/>
+        </scene>
+        <!--Accostic View Controller-->
+        <scene sceneID="Spg-jB-Mul">
+            <objects>
+                <viewController storyboardIdentifier="AccosticView" useStoryboardIdentifierAsRestorationIdentifier="YES" id="Izp-CY-Rf2" customClass="AccosticViewController" customModule="Dezimart" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="OdA-lC-nGP">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" red="1" green="0.0" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                        <viewLayoutGuide key="safeArea" id="FcI-4g-eDA"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="wYE-RV-aHI" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3128" y="860"/>
+        </scene>
+        <!--Left Menu View-->
+        <scene sceneID="BDC-42-Dhg">
+            <objects>
+                <viewController storyboardIdentifier="LeftView" useStoryboardIdentifierAsRestorationIdentifier="YES" id="AR3-7G-33Y" customClass="LeftMenuView" customModule="Dezimart" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="qXZ-XL-fxi">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" red="0.0" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                        <viewLayoutGuide key="safeArea" id="q7e-IG-fPt"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="VWm-IE-tSw" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-66" y="163"/>
+        </scene>
+    </scenes>
+</document>
